@@ -26,12 +26,12 @@
 
 ## Встановлення
 
-1. Завантажте `MiniCleaner.exe` з розділу [Releases](https://github.com/Voytovich/MiniCleaner/releases)
-2. Запустіть `MiniCleaner.exe` — встановлення не потрібне
+1. Завантажте `MiniC.exe` з розділу [Releases](https://github.com/Voytovich/MiniCleaner/releases)
+2. Запустіть `MiniC.exe` — встановлення не потрібне
 
 ## Попередження Windows SmartScreen
 
-При першому запуску `MiniCleaner.exe` Windows SmartScreen може показати попередження: "Система Windows захистила ваш комп'ютер" з "Невідомий видавець". Це нормально для непідписаних додатків.
+При першому запуску `MiniC.exe` Windows SmartScreen може показати попередження: "Система Windows захистила ваш комп'ютер" з "Невідомий видавець". Це нормально для непідписаних додатків.
 
 **Щоб запустити додаток:**
 1. Натисніть **"Докладніше"**

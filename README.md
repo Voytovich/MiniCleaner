@@ -26,12 +26,12 @@ Windows cleanup application with a graphical interface. Helps find and delete la
 
 ## Installation
 
-1. Download `MiniCleaner.exe` from the [Releases](https://github.com/Voytovich/MiniCleaner/releases) section
-2. Run `MiniCleaner.exe` — no installation required
+1. Download `MiniC.exe` from the [Releases](https://github.com/Voytovich/MiniCleaner/releases) section
+2. Run `MiniC.exe` — no installation required
 
 ## Windows SmartScreen Warning
 
-When you first run `MiniCleaner.exe`, Windows SmartScreen may show a warning: "Windows protected your PC" with "Unknown publisher". This is normal for unsigned applications.
+When you first run `MiniC.exe`, Windows SmartScreen may show a warning: "Windows protected your PC" with "Unknown publisher". This is normal for unsigned applications.
 
 **To run the application:**
 1. Click **"More info"** (or "Подробнее" in Russian)

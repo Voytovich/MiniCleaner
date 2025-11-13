@@ -26,12 +26,12 @@
 
 ## Установка
 
-1. Скачайте `MiniCleaner.exe` из раздела [Releases](https://github.com/Voytovich/MiniCleaner/releases)
-2. Запустите `MiniCleaner.exe` — установка не требуется
+1. Скачайте `MiniC.exe` из раздела [Releases](https://github.com/Voytovich/MiniCleaner/releases)
+2. Запустите `MiniC.exe` — установка не требуется
 
 ## Предупреждение Windows SmartScreen
 
-При первом запуске `MiniCleaner.exe` Windows SmartScreen может показать предупреждение: "Система Windows защитила ваш компьютер" с "Неизвестный издатель". Это нормально для неподписанных приложений.
+При первом запуске `MiniC.exe` Windows SmartScreen может показать предупреждение: "Система Windows защитила ваш компьютер" с "Неизвестный издатель". Это нормально для неподписанных приложений.
 
 **Чтобы запустить приложение:**
 1. Нажмите **"Подробнее"**
