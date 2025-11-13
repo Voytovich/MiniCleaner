@@ -4,6 +4,8 @@ Windows cleanup application with a graphical interface. Helps find and delete la
 
 **Languages:** [English](README.md) | [Русский](README.ru.md) | [Українська](README.uk.md)
 
+**Important:** [Windows SmartScreen warning](#windows-smartscreen-warning)
+
 ## Features
 
 ### File Scanning and Deletion
@@ -26,6 +28,18 @@ Windows cleanup application with a graphical interface. Helps find and delete la
 
 1. Download `MiniCleaner.exe` from the [Releases](https://github.com/Voytovich/MiniCleaner/releases) section
 2. Run `MiniCleaner.exe` — no installation required
+
+## Windows SmartScreen Warning
+
+When you first run `MiniCleaner.exe`, Windows SmartScreen may show a warning: "Windows protected your PC" with "Unknown publisher". This is normal for unsigned applications.
+
+**To run the application:**
+1. Click **"More info"** (or "Подробнее" in Russian)
+2. Click **"Run anyway"** (or "Выполнить в любом случае")
+
+**Why this happens:**
+- Windows SmartScreen blocks unsigned applications by default
+- This is a security feature, but the application is safe to use
 
 ## Usage
 
@@ -103,18 +117,6 @@ When the "Skip system folders" option is enabled, the following are automaticall
 - `C:\Users\All Users`
 
 ## Troubleshooting
-
-### Windows SmartScreen warning
-
-When you first run `MiniCleaner.exe`, Windows SmartScreen may show a warning: "Windows protected your PC" with "Unknown publisher". This is normal for unsigned applications.
-
-**To run the application:**
-1. Click **"More info"** (or "Подробнее" in Russian)
-2. Click **"Run anyway"** (or "Выполнить в любом случае")
-
-**Why this happens:**
-- Windows SmartScreen blocks unsigned applications by default
-- This is a security feature, but the application is safe to use
 
 ### Application won't start
 - Make sure you are using Windows 10/11
