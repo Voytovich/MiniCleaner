@@ -104,6 +104,18 @@ When the "Skip system folders" option is enabled, the following are automaticall
 
 ## Troubleshooting
 
+### Windows SmartScreen warning
+
+When you first run `MiniCleaner.exe`, Windows SmartScreen may show a warning: "Windows protected your PC" with "Unknown publisher". This is normal for unsigned applications.
+
+**To run the application:**
+1. Click **"More info"** (or "Подробнее" in Russian)
+2. Click **"Run anyway"** (or "Выполнить в любом случае")
+
+**Why this happens:**
+- Windows SmartScreen blocks unsigned applications by default
+- This is a security feature, but the application is safe to use
+
 ### Application won't start
 - Make sure you are using Windows 10/11
 - Check if antivirus is blocking the application
