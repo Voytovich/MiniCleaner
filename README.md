@@ -1,98 +1,100 @@
 # MiniCleaner
 
-Додаток для очищення Windows з графічним інтерфейсом. Допомагає знайти та видалити великі/старі файли, а також виправити пошкоджені записи в реєстрі Windows.
+Windows cleanup application with a graphical interface. Helps find and delete large/old files, as well as fix corrupted entries in the Windows registry.
 
-## Можливості
+**Languages:** [English](README.md) | [Русский](README.ru.md) | [Українська](README.uk.md)
 
-### Сканування та видалення файлів
-- Пошук великих файлів за заданим розміром
-- Фільтрація за віком файлів
-- Пошук "сміттєвих" файлів (логи, тимчасові файли, кеші тощо)
-- Два режими відображення: за файлами або за папками
-- Безпечне видалення з підтвердженням
+## Features
 
-### Виправлення реєстру Windows
-- Пошук пошкоджених записів у автозавантаженні (Run/RunOnce)
-- Пошук неіснуючих шляхів у записах Uninstall
-- Видалення проблемних записів з реєстру
+### File Scanning and Deletion
+- Search for large files by specified size
+- Filter files by age
+- Search for "junk" files (logs, temporary files, caches, etc.)
+- Two display modes: by files or by folders
+- Safe deletion with confirmation
 
-## Вимоги
+### Windows Registry Repair
+- Search for corrupted entries in startup (Run/RunOnce)
+- Search for non-existent paths in Uninstall entries
+- Remove problematic entries from the registry
 
-- **ОС**: Windows 10/11
+## Requirements
 
-## Встановлення
+- **OS**: Windows 10/11
 
-1. Завантажте `MiniCleaner.exe` з розділу [Releases](https://github.com/Voytovich/MiniCleaner/tags)
-2. Запустіть `MiniCleaner.exe` — встановлення не потрібне
+## Installation
 
-## Використання
+1. Download `MiniCleaner.exe` from the [Releases](https://github.com/Voytovich/MiniCleaner/releases) section
+2. Run `MiniCleaner.exe` — no installation required
 
-### Вкладка "Файли"
+## Usage
 
-1. **Виберіть папку для сканування**
-   - Введіть шлях вручну (наприклад, `C:\`) або натисніть "Огляд..."
-   - Можна вказати весь диск або конкретну папку
+### "Files" Tab
 
-2. **Налаштуйте фільтри**
-   - **Мін. розмір**: мінімальний розмір файлів для пошуку (в МБ)
-   - **Старіше**: шукати тільки файли старіші за вказану кількість днів
-   - **Тільки підозріле сміття**: шукати тільки файли з розширеннями (.log, .tmp, .bak тощо)
-   - **Пропускати системні папки**: автоматично виключає C:\Windows, C:\Program Files тощо
+1. **Select folder to scan**
+   - Enter path manually (e.g., `C:\`) or click "Browse..."
+   - You can specify the entire drive or a specific folder
 
-3. **Виберіть режим відображення**
-   - **Файли**: список усіх знайдених файлів
-   - **Папки**: групування за папками з загальним розміром
+2. **Configure filters**
+   - **Min. size**: minimum file size to search for (in MB)
+   - **Older than**: search only for files older than the specified number of days
+   - **Only suspicious junk**: search only for files with extensions (.log, .tmp, .bak, etc.)
+   - **Skip system folders**: automatically excludes C:\Windows, C:\Program Files, etc.
 
-4. **Запустіть сканування**
-   - Натисніть кнопку "Сканувати"
-   - Прогрес відображається в рядку стану
-   - Можна скасувати сканування кнопкою "Скасувати"
+3. **Select display mode**
+   - **Files**: list of all found files
+   - **Folders**: grouping by folders with total size
 
-5. **Видалення файлів**
-   - Позначте потрібні файли/папки галочками в колонці "Видалити"
-   - Натисніть "Видалити позначене"
-   - Підтвердіть видалення (цю дію не можна скасувати!)
+4. **Start scanning**
+   - Click the "Scan" button
+   - Progress is displayed in the status bar
+   - You can cancel scanning with the "Cancel" button
 
-### Вкладка "Реєстр"
+5. **Delete files**
+   - Check the files/folders you need in the "Delete" column
+   - Click "Delete Selected"
+   - Confirm deletion (this action cannot be undone!)
 
-1. **Виберіть типи перевірки**
-- **Автозавантаження (Run/RunOnce)**: пошук пошкоджених шляхів у автозавантаженні
-- **Uninstall (пошкоджені записи)**: пошук неіснуючих шляхів у записах видалення програм
+### "Registry" Tab
 
-2. **Запустіть сканування**
-   - Натисніть "Сканувати реєстр"
-   - Дочекайтеся завершення сканування
+1. **Select check types**
+- **Startup (Run/RunOnce)**: search for corrupted paths in startup
+- **Uninstall (corrupted entries)**: search for non-existent paths in program uninstall entries
 
-3. **Виправлення записів**
-   - Позначте проблемні записи галочками
-   - Натисніть "Виправити позначене"
-- **Увага**: зміна реєстру може вплинути на систему. Рекомендується створити точку відновлення перед виправленням.
+2. **Start scanning**
+   - Click "Scan Registry"
+   - Wait for scanning to complete
 
-## Підтримувані типи "сміттєвих" файлів
+3. **Fix entries**
+   - Check the problematic entries
+   - Click "Fix Selected"
+- **Warning**: modifying the registry may affect the system. It is recommended to create a restore point before fixing.
 
-Додаток автоматично визначає наступні типи файлів як потенційне сміття:
+## Supported "Junk" File Types
+
+The application automatically identifies the following file types as potential junk:
 
 - `.log`, `.tmp`, `.temp`, `.bak`, `.old`, `.cache`
 - `.ds_store`, `.crdownload`, `.part`, `.dmp`, `.err`
 - `.chk`, `.swp`, `.gid`, `.~lock`, `.thumbs`
 - `.ini`, `.etl`, `.sqm`, `.msi`, `.msp`
 
-## Кольорова індикація
+## Color Indication
 
-У таблиці результатів файли відображаються кольором залежно від розміру:
-- **Червоний**: ≥ 1 GB
-- **Помаранчевий**: ≥ 100 MB
-- **Жовтий**: ≥ 10 MB
+In the results table, files are displayed in color depending on size:
+- **Red**: ≥ 1 GB
+- **Orange**: ≥ 100 MB
+- **Yellow**: ≥ 10 MB
 
-## Безпека
+## Security
 
-- **Видалення файлів незворотне** — переконайтеся, що вибрані файли дійсно не потрібні
-- **Зміна реєстру** може вплинути на роботу системи — створіть точку відновлення перед виправленням
-- Додаток не вимагає прав адміністратора для сканування, але деякі операції з реєстром можуть вимагати підвищених прав
+- **File deletion is irreversible** — make sure the selected files are really not needed
+- **Registry changes** may affect system operation — create a restore point before fixing
+- The application does not require administrator rights for scanning, but some registry operations may require elevated privileges
 
-## Виключаємі папки (при увімкненій опції)
+## Excluded Folders (when option is enabled)
 
-При увімкненій опції "Пропускати системні папки" автоматично виключаються:
+When the "Skip system folders" option is enabled, the following are automatically excluded:
 - `C:\Windows`
 - `C:\Program Files`
 - `C:\Program Files (x86)`
@@ -100,29 +102,29 @@
 - `C:\$Recycle.Bin`
 - `C:\Users\All Users`
 
-## Вирішення проблем
+## Troubleshooting
 
-### Додаток не запускається
-- Переконайтеся, що використовуєте Windows 10/11
-- Перевірте, чи не блокує антивірус додаток
-- Спробуйте запустити від імені адміністратора
+### Application won't start
+- Make sure you are using Windows 10/11
+- Check if antivirus is blocking the application
+- Try running as administrator
 
-### Сканування працює повільно
-- Це нормально для великих дисків
-- Використовуйте фільтри (мінімальний розмір, вік) для прискорення
-- Виключіть системні папки
+### Scanning is slow
+- This is normal for large drives
+- Use filters (minimum size, age) to speed up
+- Exclude system folders
 
-### Немає доступу до деяких файлів/папок
-- Деякі системні файли захищені Windows
-- Запустіть додаток від імені адміністратора для доступу до захищених файлів
+### No access to some files/folders
+- Some system files are protected by Windows
+- Run the application as administrator to access protected files
 
-## Ліцензія
+## License
 
-Цей проект поширюється під ліцензією **MIT License**. 
+This project is distributed under the **MIT License**. 
 
-Ви можете вільно використовувати, змінювати та поширювати цей код, включаючи комерційне використання. Деталі див. у файлі [LICENSE](LICENSE).
+You are free to use, modify, and distribute this code, including commercial use. See the [LICENSE](LICENSE) file for details.
 
-## Автор
+## Author
 
 Oleksii Voitovych
 
